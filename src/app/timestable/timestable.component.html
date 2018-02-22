@@ -1,3 +1,7 @@
-<p>
-  timestable works!
-</p>
+<div class="Column">
+  <div class="Row" *ngFor="let y of numbers">
+    <button class="Box" *ngFor="let x of numbers">
+      {{x*y}}
+    </button>
+  </div>
+</div>
