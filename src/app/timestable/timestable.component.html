@@ -1,6 +1,6 @@
 <div class="Column">
   <div class="Row" *ngFor="let y of numbers">
-    <button class="Box" *ngFor="let x of numbers">
+    <button class="Box" *ngFor="let x of numbers" (mouseover)="singleState.set(x, y)">
       {{x*y}}
     </button>
   </div>

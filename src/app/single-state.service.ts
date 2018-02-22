@@ -7,7 +7,8 @@ export class SingleStateService {
   y = 1;
 
   set(x: number, y: number) {
-
+    this.x = x;
+    this.y = y;
   }
 
   constructor() { }
